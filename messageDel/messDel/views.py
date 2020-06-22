@@ -57,3 +57,6 @@ def emailAuth(request, auth) :
 	userP.emailauth = True
 	userP.save()
 	return render(request, 'messDel/sample.html')
+
+def googleRedirect(request) :
+	return render(request, 'messDel/msg.html')

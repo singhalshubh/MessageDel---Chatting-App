@@ -21,5 +21,7 @@ from django.conf.urls import include, url
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', views.userLogin, name="login"),
-    re_path(r'^emailauth/(?P<auth>[0-9a-zA-Z]{56})/$', views.emailAuth , name="emailAuth")
+    re_path(r'^emailauth/(?P<auth>[0-9a-zA-Z]{56})/$', views.emailAuth , name="emailAuth"),
+    path('accounts/', include('allauth.urls')),	
+    url(r'msg.html/' , views.googleRedirect, name="googleRedirect")
 ]
