@@ -1,0 +1,52 @@
+* {
+    text-align: center;
+    background-color: lightblue;
+}
+
+.top-of-page {
+    background-color: azure;
+    margin-bottom: 5%;
+}
+
+#main-title {
+    background-color: greenyellow;
+    color: blue;
+    font-family: cursive;
+}
+
+.loginform {
+    background-image: url("https://i.pinimg.com/originals/e2/71/fd/e271fda72f1e158b5f0569cc72d36d7f.jpg");
+    background-size: 50%;
+}
+
+input {
+    border: 2px solid blue;
+    border-radius: 8px;
+    background-color: cyan;
+    color: black;
+    width: 20%;
+    margin: 0px auto 20px auto;
+    text-align: left;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.email,
+.user,
+.pass {
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.googleauth {
+    margin: 30px;
+}
