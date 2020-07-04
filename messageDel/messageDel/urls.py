@@ -16,12 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 from messDel import views
+from messDel.views import userProfile
 from django.conf.urls import include, url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', views.userLogin, name="login"),
     re_path(r'^emailauth/(?P<auth>[0-9a-zA-Z]{56})/$', views.emailAuth , name="emailAuth"),
+    re_path(r'^wrongEmail/(?P<auth>[0-9a-zA-Z]{56})/$', views.wrongEmail , name="wrongEmail"),
+    re_path(r'^userProfile/(?P<auth>[0-9a-zA-Z]{56})/$', views.userProfile, name="userAuth"),
     path('accounts/', include('allauth.urls')),	
-    url(r'msg.html/' , views.googleRedirect, name="googleRedirect")
+    url(r'chat.html/' , views.googleRedirect, name="googleRedirect")
 ]

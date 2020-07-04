@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Message Chat</title>
+	<title>User Profile</title>
 </head>
 <body>
+    <form method="POST" class="userProfile">
+        {% csrf_token %}
+        <label for="user" class="user">Username : </label><br>
+        <input type="text" name="username"><br>
+        <label for="status" class="pass">Status : </label><br>
+        <input type="text" name="status"><br>
 
+        <input type="submit" name="Submit">
+    </form>
 </body>
 </html>
