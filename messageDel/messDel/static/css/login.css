@@ -1,52 +1,66 @@
-* {
-    text-align: center;
-    background-color: lightblue;
-}
-
-.top-of-page {
-    background-color: azure;
-    margin-bottom: 5%;
-}
-
-#main-title {
-    background-color: greenyellow;
-    color: blue;
-    font-family: cursive;
-}
-
-.loginform {
-    background-image: url("https://i.pinimg.com/originals/e2/71/fd/e271fda72f1e158b5f0569cc72d36d7f.jpg");
-    background-size: 50%;
-}
-
-input {
-    border: 2px solid blue;
-    border-radius: 8px;
-    background-color: cyan;
-    color: black;
-    width: 20%;
-    margin: 0px auto 20px auto;
-    text-align: left;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 20px;
-    text-align: center;
-}
-
-.email,
-.user,
-.pass {
-    font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.googleauth {
-    margin: 30px;
-}
+    * {
+        text-align: center;
+        color: white;
+    }
+    
+    body {
+        background-image: url("https://www.itl.cat/pngfile/big/157-1572191_hd-wallpapers-for-website-background-cool-background-image.jpg");
+    }
+    
+    .top-of-page {
+        margin-bottom: 5%;
+        font-size: 150%;
+    }
+    
+    #main-title {
+        font-size: 300%;
+        width: 100%;
+        margin: auto auto 3% auto;
+        text-shadow: 0.02em 0.02em 0.06em black;
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-blue-atmospheric-background-image_50584.jpg");
+    }
+    
+    .loginform {
+        margin: auto;
+        background-size: 50%;
+        font-size: 130%;
+    }
+    
+    input {
+        border: 10% solid blue;
+        background-color: ghostwhite;
+        color: black;
+        width: 20%;
+        margin: 0% auto 1% auto;
+        text-align: left;
+    }
+    
+    input:focus {
+        box-shadow: 0 0 0.5em cyan;
+    }
+    
+    input[type=submit] {
+        background-color: #3936d1;
+        border: none;
+        color: white;
+        padding: 0.5em 0.5em;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 100%;
+        text-align: center;
+    }
+    
+    input[type=submit]:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 1em yellowgreen;
+    }
+    
+    .signin {
+        width: 20%;
+        height: auto;
+        margin-top: 3%;
+    }
+    
+    .signin:hover {
+        transform: scale(1.2);
+    }
