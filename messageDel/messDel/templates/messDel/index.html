@@ -4,24 +4,25 @@
 
 <head>
     <title>Login Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
 
 <body>
     <section class="top-of-page">
-        <h1 id="main-title">Chat Application</h1>
+        <h1 id="main-title">Janlo!</h1>
         <span>Login now for a seamless chat experience.</span>
     </section>
     <form method="POST" class="loginform">
         {% csrf_token %}
-      	<label for="email" class="email"></label>Email-Id : <br>
+        <label for="email" class="email"></label>Email-Id : <br>
         <input type="email" name="emailid"><br>
         <label for="pass" class="pass">Password : </label><br>
         <input type="password" name="password"><br>
-        
+
         <input type="submit" name="Submit">
     </form>
-    <a href="{% provider_login_url 'google' %}" class="googleauth">Login with Google</a>
+    <a href="{% provider_login_url 'google' %}" class="googleauth"><img src="https://luke-bryan.disciplemedia.com/assets/google_login_button-6474359c9c06fef79ddc3d744342cca87e0b3ef8be1d0d7b8d71c22347c84075.png" class="signin"></a>
 </body>
 
 </html>
